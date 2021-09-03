@@ -13,7 +13,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      PASSWORD1: ${{secrets.PASSWORD1}}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
